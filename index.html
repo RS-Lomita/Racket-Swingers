@@ -121,6 +121,18 @@
         <button class="btn" onclick="sendInquiry()">Send Inquiry</button>
     </div>
 
- 
+    <script>
+        function sendInquiry() {
+            const email = document.getElementById("email").value;
+            if (!email) {
+                alert("Please enter your email before sending.");
+                return;
+            }
+
+            // Open Gmail in a new tab with a blank email draft
+            const gmailURL = `https://mail.google.com/mail/?view=cm&to=Protennis1001@gmail.com&su=Inquiry&body=Hello, I would like to ask about your stringing services. My email is: ${email}`;
+            window.open(gmailURL, '_blank');
+        }
+    </script>
 </body>
 </html>
