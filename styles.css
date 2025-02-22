@@ -10,7 +10,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: #388e3c; /* Light background for better contrast */
+    background-color: #Ffffff    ; /* Light background for better contrast */
     color: #333; /* Darker text for readability */
   }
   
@@ -59,14 +59,7 @@ html {
     content: '';
     display: block;
     height: 3px; /* Slimmer border */
-    background: linear-gradient(
-      90deg,
-      pink 0%,
-      black 25%,
-      white 50%,
-      pink 75%,
-      black 100%
-    );
+    background: #90ee90; /* Semi-transparent white */;
   }
   
   
@@ -103,7 +96,7 @@ html {
   
   /* Hero Section */
   .hero {
-    background: url('./images/background.jpg') no-repeat center/cover;
+    background-image: url('images/wimbledon.jpg');
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -151,7 +144,7 @@ html {
   
   
   .hero .btn:hover {
-    background: #7B1FA2;
+    background: #6ba21f;
     transform: scale(1.05); /* Slight zoom effect */
   }
   
