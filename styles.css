@@ -1,216 +1,217 @@
 /* styles.css */
 
 html {
-    scroll-behavior: smooth;
-  }
-  /* Global Styles */
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    background-color: #Ffffff    ; /* Light background for better contrast */
-    color: #333; /* Darker text for readability */
-  }
-  
-  p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #444; /* Softer text color */
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  
-  /* General Reset */
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Navbar */
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  
-  /* Brand Name */
-  .brand {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 0.5rem;
-    color: black;
-    font-family: "Georgia", serif; /* Adjust to your preferred font */
-  }
-  
-  /* Border */
-  .navbar::after {
-    content: '';
-    display: block;
-    height: 3px; /* Slimmer border */
-    background: #90ee90; /* Semi-transparent white */;
-  }
-  
-  
-  
-  .navbar .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #7B1FA2;
-  }
-  
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-  }
-  
-  
-  .nav-links a {
-    color: #7B1FA2;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-    padding: 0.5rem 1rem; /* Added padding */
-  }
-  
-  
-  .nav-links a:hover {
-    color: #7B1FA2;
-    transform: translateY(-2px); /* Slight bounce effect */
-  }
-  
-  
-  /* Hero Section */
-  .hero {
-    background-image: url('images/wimbledon.jpg');
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 0 2rem;
-    margin-top: 70px; /* Adjust for fixed navbar */
-  }
-  
-  
-  .hero h1 {
-    font-size: 4rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    display: inline-block;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  }
-  
-  
-  
-  .hero p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-  }
-  
-  
-  .hero .btn {
-    margin-top: 2rem;
-    padding: 1rem 2.5rem;
-    background: #7B1FA2;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: transform 0.3s ease, background 0.3s ease;
-  }
-  
-  
-  .hero .btn:hover {
-    background: #6ba21f;
-    transform: scale(1.05); /* Slight zoom effect */
-  }
-  
-  
-  /* Section Styling */
-  section {
-    padding: 4rem 0;
-  }
-  
-  
-  h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #7B1FA2;
-  }
-  
-  
-  p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  
-  /* Menu Grid */
-  .flavor-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-  }
-  
-  
-  .flavor-item {
-    text-align: center;
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  
-  
-  .flavor-item:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
-  }
-  
-  
-  /* Footer */
-  footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-    position: relative;
-  }
-  
-  footer::before {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 100%;
-    background: linear-gradient(90deg, pink, white, black);
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  scroll-behavior: smooth;
+}
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #Ffffff    ; /* Light background for better contrast */
+  color: #333; /* Darker text for readability */
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444; /* Softer text color */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Brand Name */
+.brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5rem;
+  color: black;
+  font-family: "Georgia", serif; /* Adjust to your preferred font */
+}
+
+/* Border */
+.navbar::after {
+  content: '';
+  display: block;
+  height: 3px; /* Slimmer border */
+  background: #90ee90; /* Semi-transparent white */;
+}
+
+
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7B1FA2;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+
+.nav-links a {
+  color: #7B1FA2;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 0.5rem 1rem; /* Added padding */
+}
+
+
+.nav-links a:hover {
+  color: #7B1FA2;
+  transform: translateY(-2px); /* Slight bounce effect */
+}
+
+
+/* Hero Section */
+.hero {
+  background-image: url('images/wimbledon.jpg');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+  margin-top: 70px; /* Adjust for fixed navbar */
+}
+
+
+.hero h1 {
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+
+.hero .btn {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background: #7B1FA2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+
+.hero .btn:hover {
+  background: #6ba21f;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+/* Section Styling */
+section {
+  padding: 4rem 0;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #7B1FA2;
+}
+
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+/* Menu Grid */
+.flavor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+
+.flavor-item {
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.flavor-item:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, pink, white, black);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
