@@ -10,7 +10,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: #Ffffff    ; /* Light background for better contrast */
+  background-color: #A3C585  ; /* Light background for better contrast */
   color: #333; /* Darker text for readability */
 }
 
@@ -180,7 +180,7 @@ p {
 
 .flavor-item {
   text-align: center;
-  background: #fff;
+  background: #ffffff;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
