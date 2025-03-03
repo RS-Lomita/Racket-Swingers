@@ -1,0 +1,57 @@
+/* Ensure full viewport height for the body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #E6E6FA; /* Light purple background */
+    font-family: Arial, sans-serif; /* Clean, sans-serif font */
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+/* Title Styling */
+.gallery h2 {
+    font-size: 3rem; /* Larger title */
+    color: #6A1B9A; /* Darker purple color for the title */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Increased the minimum size of images */
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 2rem; /* Added some top margin for spacing */
+}
+
+/* Gallery Images */
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    filter: brightness(1.1); /* Slight increase in brightness on hover */
+}
+
+/* Optional: Add lightbox effect (if needed in the future) */
+.gallery-grid img:focus {
+    outline: none;
+}
