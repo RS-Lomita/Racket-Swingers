@@ -58,27 +58,27 @@ document.querySelectorAll('.nav-links a').forEach(link => {
       // Add any functionality here if needed
     });
   });
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const directionsLink = document.getElementById('get-directions');
-    const destination = "320 Avenue I, Redondo Beach, CA 90277";
-  
+    const destination = "2353 Lomita Blvd, Lomita, CA 90717"; // Updated Location
+
     directionsLink.addEventListener('click', (event) => {
-      event.preventDefault();
-  
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            const { latitude, longitude } = position.coords;
-            const userLocation = `${latitude},${longitude}`;
-            const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${userLocation}&destination=${encodeURIComponent(destination)}`;
-            window.open(googleMapsUrl, '_blank');
-          },
-          () => {
-            alert("Unable to retrieve your location. Please enable location services and try again.");
-          }
-        );
-      } else {
-        alert("Geolocation is not supported by your browser.");
-      }
+        event.preventDefault();
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const { latitude, longitude } = position.coords;
+                    const userLocation = `${latitude},${longitude}`;
+                    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&origin=${userLocation}&destination=${encodeURIComponent(destination)}`;
+                    window.open(googleMapsUrl, '_blank');
+                },
+                () => {
+                    alert("Unable to retrieve your location. Please enable location services and try again.");
+                }
+            );
+        } else {
+            alert("Geolocation is not supported by your browser.");
+        }
     });
-  });
+});
