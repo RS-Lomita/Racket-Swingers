@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* Global Styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -10,14 +11,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: #A3C585  ; /* Light background for better contrast */
-  color: #333; /* Darker text for readability */
+  background-color: #A3C585;
+  color: #333;
 }
 
 p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #444; /* Softer text color */
+  color: #444;
 }
 
 .container {
@@ -26,43 +27,16 @@ p {
   margin: 0 auto;
 }
 
-
-/* General Reset */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 /* Navbar */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
   text-align: center;
-  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
-
-/* Brand Name */
-.brand {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin: 0;
-  padding: 0.5rem;
-  color: black;
-  font-family: "Georgia", serif; /* Adjust to your preferred font */
-}
-
-/* Border */
-.navbar::after {
-  content: '';
-  display: block;
-  height: 3px; /* Slimmer border */
-  background: #90ee90; /* Semi-transparent white */;
-}
-
-
 
 .navbar .logo {
   font-size: 1.8rem;
@@ -71,28 +45,24 @@ body {
   color: #7B1FA2;
 }
 
-
 .nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
 
-
 .nav-links a {
   color: #7B1FA2;
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s ease, transform 0.3s ease;
-  padding: 0.5rem 1rem; /* Added padding */
+  padding: 0.5rem 1rem;
 }
-
 
 .nav-links a:hover {
   color: #7B1FA2;
-  transform: translateY(-2px); /* Slight bounce effect */
+  transform: translateY(-2px);
 }
-
 
 /* Hero Section */
 .hero {
@@ -105,9 +75,8 @@ body {
   color: white;
   text-align: center;
   padding: 0 2rem;
-  margin-top: 70px; /* Adjust for fixed navbar */
+  margin-top: 70px;
 }
-
 
 .hero h1 {
   font-size: 4rem;
@@ -116,16 +85,13 @@ body {
   padding: 1.5rem;
   border-radius: 12px;
   display: inline-block;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-
 
 .hero p {
   font-size: 1.5rem;
   margin-top: 1rem;
 }
-
 
 .hero .btn {
   margin-top: 2rem;
@@ -142,18 +108,15 @@ body {
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-
 .hero .btn:hover {
   background: #6ba21f;
-  transform: scale(1.05); /* Slight zoom effect */
+  transform: scale(1.05);
 }
-
 
 /* Section Styling */
 section {
   padding: 4rem 0;
 }
-
 
 h2 {
   text-align: center;
@@ -162,21 +125,12 @@ h2 {
   color: #7B1FA2;
 }
 
-
-p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #555;
-}
-
-
 /* Menu Grid */
 .flavor-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
-
 
 .flavor-item {
   text-align: center;
@@ -187,13 +141,21 @@ p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
-.flavor-item:hover {
-  transform: scale(1.05); /* Slight zoom effect */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+#about .flavor-item {
+  max-width: 400px; /* Adjust as needed */
+  margin: 0 auto; /* Centers it */
+  text-align: center;
 }
 
+.flavor-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flavor-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
 
 /* Footer */
 footer {
@@ -214,4 +176,3 @@ footer::before {
   top: 0;
   left: 0;
 }
-
